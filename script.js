@@ -6,16 +6,16 @@ const tabContent = document.querySelectorAll('.js-tabcontent section');
 
 if(tabMenu.length && tabContent.length){
 function activeTab(index) {
-    tabContent.forEach((section) => {
+tabContent.forEach((section) => {
         section.classList.remove('ativo');
-    });
-    tabContent[index].classList.add('ativo');
+});
+tabContent[index].classList.add('ativo');
 };
 
 tabMenu.forEach((itemMenu, index) => {
-    itemMenu.addEventListener('click', () => {
-        activeTab(index);
-    });
+itemMenu.addEventListener('click', () => {
+    activeTab(index);
+});
 });
 };
 };
@@ -43,21 +43,46 @@ accordionNav();
 
 //SCROLL SUAVE(links internos)
 function linksIntScroll(){
-    const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
 
-    function scrollToSections(event){
-        event.preventDefault();
-        const href = event.currentTarget.getAttribute('href');
-        const section = document.querySelector(href)
+function scrollToSections(event){
+     event.preventDefault();
+    const href = event.currentTarget.getAttribute('href');
+    const section = document.querySelector(href)
 
-        section.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-        })
-    };
+section.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+    })
+};
 
-    linksInternos.forEach((links) =>{
-        links.addEventListener('click', scrollToSections)
-    });
+linksInternos.forEach((links) =>{
+    links.addEventListener('click', scrollToSections)
+});
 }
 linksIntScroll();
+
+
+//ANIMAÇÃO AO SCROLL
+function scrollAnimation() {
+  const sections = document.querySelectorAll('.js-scroll');
+  if(sections.length) {
+    const windowMetade = window.innerHeight * 0.6;
+
+    function animaScroll() {
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const isSectionVisible = (sectionTop - windowMetade) < 0;
+        if(isSectionVisible)
+          section.classList.add('ativo');
+        else 
+          section.classList.remove('ativo');
+      })
+    }
+
+    animaScroll();
+
+    window.addEventListener('scroll', animaScroll);
+  }
+}
+scrollAnimation();
