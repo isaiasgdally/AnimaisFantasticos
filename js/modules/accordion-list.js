@@ -1,5 +1,7 @@
 export default function accordionList() {
-  const accordionList = document.querySelectorAll('[data-anime="accordion"] dt');
+  const accordionList = document.querySelectorAll(
+    '[data-anime="accordion"] dt'
+  );
 
   accordionList[0].classList.add("ativo");
   accordionList[0].nextElementSibling.classList.add("ativo");
@@ -16,4 +18,4 @@ export default function accordionList() {
   }
 }
 
-console.log('Accordion funcionou');
+console.log("Accordion funcionou");

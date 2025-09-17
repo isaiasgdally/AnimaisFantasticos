@@ -9,223 +9,238 @@
       href="https://fonts.googleapis.com/css?family=Playfair+Display+SC"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script>document.documentElement.className += ' js';</script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script>
+      document.documentElement.className += " js";
+    </script>
   </head>
 
   <body>
-    <nav class="menu js-menu" data="menu">
-      <ul>
-        <li><a href="#animais">Animais</a></li>
-        <li><a href="#faq">Faq</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li>
-          <a href="https://github.com/isaiasgdally" target="_blank">Dev →</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="grid-section animais" id="animais" data-anime="scroll">
-      <h1 class="titulo">Animais Fantásticos</h1>
-      <ul class="animais-lista" data-tab="menu">
-        <li>
-          <img src="img/imagem1.jpg" />
-        </li>
-        <li>
-          <img src="img/imagem2.jpg" />
-        </li>
-        <li>
-          <img src="img/imagem3.jpg" />
-        </li>
-        <li>
-          <img src="img/imagem4.jpg" />
-        </li>
-        <li>
-          <img src="img/imagem5.jpg" />
-        </li>
-        <li>
-          <img src="img/imagem6.jpg" />
-        </li>
-      </ul>
-      <div class="animais-descricao " data-tab="content">
-        <section class="ativo" data-anime="show-right">
-          <h2>Raposa</h2>
-          <p>
+    <div class="grid-container">
+      <nav class="menu js-menu" data="menu">
+        <ul>
+          <li><a href="#animais">Animais</a></li>
+          <li><a href="#faq">Faq</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="" data-modal="abrir">Login →</a></li>
+        </ul>
+      </nav>
+      <section class="grid-section animais" id="animais" data-anime="scroll">
+        <h1 class="titulo">Animais Fantásticos</h1>
+        <ul class="animais-lista" data-tab="menu">
+          <li>
+            <img src="img/imagem1.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem2.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem3.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem4.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem5.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem6.jpg" />
+          </li>
+        </ul>
+        <div class="animais-descricao" data-tab="content">
+          <section class="ativo" data-anime="show-right">
+            <h2>Raposa</h2>
+            <p>
+              As raposas são animais mamíferos e onívoros pertencentes à família
+              Canidae. São vulpídeos de porte médio, caracterizados por um
+              focinho comprido e uma cauda longa e peluda.
+            </p>
+            <p>
+              Também apresentam como particularidade suas pupilas ovais,
+              semelhantes às pupilas verticais dos felídeos.
+            </p>
+            <p>
+              De cerca de 40 espécies reconhecidas como raposas, somente 12
+              pertencem ao gênero Vulpes das "raposas verdadeiras", do qual a
+              raposa vermelha é a mais comum.
+            </p>
+            <p>
+              Também apresentam como particularidade suas pupilas ovais,
+              semelhantes às pupilas verticais dos felídeos.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Esquilo</h2>
+            <p>
+              Os esquilos são pequenos mamíferos roedores pertencentes à família
+              Sciuridae. São ágeis, rápidos e adaptáveis, com cauda longa e
+              peluda que auxilia no equilíbrio e na proteção durante os saltos.
+            </p>
+            <p>
+              Apresentam como traço marcante os dentes incisivos em constante
+              crescimento, o que os obriga a roer sementes, cascas e outros
+              materiais duros.
+            </p>
+            <p>
+              Existem diversas espécies de esquilos distribuídas pelo mundo, e
+              muitas delas habitam florestas temperadas e tropicais, sendo
+              essenciais para a dispersão de sementes e o crescimento das
+              árvores.
+            </p>
+            <p>
+              Possuem sentidos apurados, especialmente a visão e a audição, que
+              lhes permitem perceber rapidamente a aproximação de predadores.
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Urso</h2>
+            <p>
+              Os ursos são grandes mamíferos pertencentes à família Ursidae. São
+              fortes, possuem patas poderosas com garras afiadas, e podem
+              apresentar dieta variada, incluindo frutas, mel, peixes e até
+              carne.
+            </p>
+            <p>
+              Apresentam como característica marcante o olfato extremamente
+              aguçado, considerado um dos mais desenvolvidos entre os animais
+              terrestres.
+            </p>
+            <p>
+              Das oito espécies existentes, algumas são bem conhecidas, como o
+              urso-pardo, o urso-polar e o panda-gigante, cada um com hábitos
+              únicos e adaptados ao seu ambiente natural.
+            </p>
+            <p>
+              Apesar da aparência lenta, são ágeis corredores e bons nadadores,
+              habilidades que os ajudam na caça e na sobrevivência.
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Lobo</h2>
+            <p>
+              Os lobos são mamíferos carnívoros pertencentes à família Canidae.
+              Vivem em matilhas organizadas e possuem uma hierarquia social
+              definida, o que os torna predadores altamente estratégicos.
+            </p>
+            <p>
+              Destacam-se por sua comunicação complexa, realizada por meio de
+              uivos, olhares e gestos corporais que reforçam a união do grupo.
+            </p>
+            <p>
+              Dentre as espécies conhecidas, o lobo-cinzento é o mais difundido,
+              presente em várias regiões do hemisfério norte, onde desempenha
+              papel vital no equilíbrio ecológico das cadeias alimentares.
+            </p>
+            <p>
+              São animais resistentes, capazes de percorrer grandes distâncias
+              em busca de alimento, sempre com grande cooperação entre os
+              membros da matilha.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Macaco</h2>
+            <p>
+              Os macacos são primatas que se destacam pela inteligência,
+              sociabilidade e grande diversidade de espécies. Muitos vivem em
+              florestas tropicais, deslocando-se com destreza entre galhos e
+              cipós.
+            </p>
+            <p>
+              Possuem como particularidade mãos hábeis e caudas que em algumas
+              espécies funcionam quase como um quinto membro.
+            </p>
+            <p>
+              Existem macacos do Velho Mundo e do Novo Mundo, variando em
+              comportamento, alimentação e tamanho, mas todos apresentam papéis
+              importantes no equilíbrio das florestas.
+            </p>
+            <p>
+              São comunicativos, utilizam sons, expressões faciais e gestos,
+              formando sociedades complexas com diferentes níveis de
+              organização.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Leão</h2>
+            <p>
+              Os leões são grandes felinos pertencentes ao gênero Panthera.
+              Conhecidos como “reis da selva”, vivem em grupos chamados
+              alcateias, onde a cooperação garante a caça e a proteção dos
+              filhotes.
+            </p>
+            <p>
+              Apresentam como característica marcante a juba dos machos, que
+              simboliza força e intimidação diante de rivais.
+            </p>
+            <p>
+              Entre os felinos, os leões são únicos por seu estilo de vida
+              social, caçando em equipe para enfrentar presas maiores e mais
+              velozes do que caçadores solitários conseguiriam capturar.
+            </p>
+            <p>
+              Possuem rugidos poderosos que podem ser ouvidos a quilômetros de
+              distância, servindo como aviso e demonstração de domínio
+              territorial.
+            </p>
+          </section>
+        </div>
+      </section>
+      <section class="grid-section faq" id="faq" data-anime="scroll">
+        <h1 class="titulo">FAQ</h1>
+        <dl class="faq-lista" data-anime="accordion">
+          <dt>Qual a idade dos animais?</dt>
+          <dd>
             As raposas são animais mamíferos e onívoros pertencentes à família
             Canidae. São vulpídeos de porte médio, caracterizados por um focinho
             comprido e uma cauda longa e peluda.
-          </p>
-          <p>
+          </dd>
+          <dt>Eles são fantásticos?</dt>
+          <dd>
             Também apresentam como particularidade suas pupilas ovais,
             semelhantes às pupilas verticais dos felídeos.
-          </p>
-          <p>
-            De cerca de 40 espécies reconhecidas como raposas, somente 12
-            pertencem ao gênero Vulpes das "raposas verdadeiras", do qual a
-            raposa vermelha é a mais comum.
-          </p>
-          <p>
+          </dd>
+          <dt>Qual a diferença?</dt>
+          <dd>
+            As raposas são animais mamíferos e onívoros pertencentes à família
+            Canidae. São vulpídeos de porte médio, caracterizados por um focinho
+            comprido e uma cauda longa e peluda.
+          </dd>
+          <dt>Como proteger?</dt>
+          <dd>
             Também apresentam como particularidade suas pupilas ovais,
             semelhantes às pupilas verticais dos felídeos.
-          </p>
-        </section>
+          </dd>
+        </dl>
+      </section>
+      <section class="grid-section contato" id="contato" data-anime="scroll">
+        <h1 class="titulo">Contato</h1>
+        <div class="mapa">
+          <img src="img/mapa.png" />
+        </div>
+        <ul class="dados">
+          <li>isaiasgdally@gmail.com</li>
+          <li>+55 (75) 4002-8922</li>
+          <li>Rua Do Bobo, n° 0</li>
+          <li>Cachoeira - BA</li>
+        </ul>
+      </section>
+      <footer class="copy">
+        <p>Todos os direitos reservados.</p>
+      </footer>
+    </div>
 
-        <section data-anime="show-right">
-          <h2>Esquilo</h2>
-          <p>
-            Os esquilos são pequenos mamíferos roedores pertencentes à família
-            Sciuridae. São ágeis, rápidos e adaptáveis, com cauda longa e peluda
-            que auxilia no equilíbrio e na proteção durante os saltos.
-          </p>
-          <p>
-            Apresentam como traço marcante os dentes incisivos em constante
-            crescimento, o que os obriga a roer sementes, cascas e outros
-            materiais duros.
-          </p>
-          <p>
-            Existem diversas espécies de esquilos distribuídas pelo mundo, e
-            muitas delas habitam florestas temperadas e tropicais, sendo
-            essenciais para a dispersão de sementes e o crescimento das árvores.
-          </p>
-          <p>
-            Possuem sentidos apurados, especialmente a visão e a audição, que
-            lhes permitem perceber rapidamente a aproximação de predadores.
-          </p>
-        </section>
-        <section data-anime="show-down">
-          <h2>Urso</h2>
-          <p>
-            Os ursos são grandes mamíferos pertencentes à família Ursidae. São
-            fortes, possuem patas poderosas com garras afiadas, e podem
-            apresentar dieta variada, incluindo frutas, mel, peixes e até carne.
-          </p>
-          <p>
-            Apresentam como característica marcante o olfato extremamente
-            aguçado, considerado um dos mais desenvolvidos entre os animais
-            terrestres.
-          </p>
-          <p>
-            Das oito espécies existentes, algumas são bem conhecidas, como o
-            urso-pardo, o urso-polar e o panda-gigante, cada um com hábitos
-            únicos e adaptados ao seu ambiente natural.
-          </p>
-          <p>
-            Apesar da aparência lenta, são ágeis corredores e bons nadadores,
-            habilidades que os ajudam na caça e na sobrevivência.
-          </p>
-        </section>
-        <section data-anime="show-down">
-          <h2>Lobo</h2>
-          <p>
-            Os lobos são mamíferos carnívoros pertencentes à família Canidae.
-            Vivem em matilhas organizadas e possuem uma hierarquia social
-            definida, o que os torna predadores altamente estratégicos.
-          </p>
-          <p>
-            Destacam-se por sua comunicação complexa, realizada por meio de
-            uivos, olhares e gestos corporais que reforçam a união do grupo.
-          </p>
-          <p>
-            Dentre as espécies conhecidas, o lobo-cinzento é o mais difundido,
-            presente em várias regiões do hemisfério norte, onde desempenha
-            papel vital no equilíbrio ecológico das cadeias alimentares.
-          </p>
-          <p>
-            São animais resistentes, capazes de percorrer grandes distâncias em
-            busca de alimento, sempre com grande cooperação entre os membros da
-            matilha.
-          </p>
-        </section>
-        <section data-anime="show-right">
-          <h2>Macaco</h2>
-          <p>
-            Os macacos são primatas que se destacam pela inteligência,
-            sociabilidade e grande diversidade de espécies. Muitos vivem em
-            florestas tropicais, deslocando-se com destreza entre galhos e
-            cipós.
-          </p>
-          <p>
-            Possuem como particularidade mãos hábeis e caudas que em algumas
-            espécies funcionam quase como um quinto membro.
-          </p>
-          <p>
-            Existem macacos do Velho Mundo e do Novo Mundo, variando em
-            comportamento, alimentação e tamanho, mas todos apresentam papéis
-            importantes no equilíbrio das florestas.
-          </p>
-          <p>
-            São comunicativos, utilizam sons, expressões faciais e gestos,
-            formando sociedades complexas com diferentes níveis de organização.
-          </p>
-        </section>
-        <section data-anime="show-right">
-          <h2>Leão</h2>
-          <p>
-            Os leões são grandes felinos pertencentes ao gênero Panthera.
-            Conhecidos como “reis da selva”, vivem em grupos chamados alcateias,
-            onde a cooperação garante a caça e a proteção dos filhotes.
-          </p>
-          <p>
-            Apresentam como característica marcante a juba dos machos, que
-            simboliza força e intimidação diante de rivais.
-          </p>
-          <p>
-            Entre os felinos, os leões são únicos por seu estilo de vida social,
-            caçando em equipe para enfrentar presas maiores e mais velozes do
-            que caçadores solitários conseguiriam capturar.
-          </p>
-          <p>
-            Possuem rugidos poderosos que podem ser ouvidos a quilômetros de
-            distância, servindo como aviso e demonstração de domínio
-            territorial.
-          </p>
-        </section>
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button class="fechar" data-modal="fechar">X</button>
+        <form action="">
+          <label for="email">Email</label>
+          <input type="email" for="email" id="email" />
+          <label for="senha">Senha</label>
+          <input type="password" for="senha" id="senha" />
+          <button type="submit">Entrar</button>
+        </form>
       </div>
     </section>
-
-    <section class="grid-section faq" id="faq" data-anime="scroll">
-      <h1 class="titulo">FAQ</h1>
-      <dl class="faq-lista" data-anime="accordion">
-        <dt>Qual a idade dos animais?</dt>
-        <dd>
-          As raposas são animais mamíferos e onívoros pertencentes à família
-          Canidae. São vulpídeos de porte médio, caracterizados por um focinho
-          comprido e uma cauda longa e peluda.
-        </dd>
-        <dt>Eles são fantásticos?</dt>
-        <dd>
-          Também apresentam como particularidade suas pupilas ovais, semelhantes
-          às pupilas verticais dos felídeos.
-        </dd>
-        <dt>Qual a diferença?</dt>
-        <dd>
-          As raposas são animais mamíferos e onívoros pertencentes à família
-          Canidae. São vulpídeos de porte médio, caracterizados por um focinho
-          comprido e uma cauda longa e peluda.
-        </dd>
-        <dt>Como proteger?</dt>
-        <dd>
-          Também apresentam como particularidade suas pupilas ovais, semelhantes
-          às pupilas verticais dos felídeos.
-        </dd>
-      </dl>
-    </section>
-
-    <section class="grid-section contato" id="contato" data-anime="scroll">
-      <h1 class="titulo">Contato</h1>
-      <div class="mapa">
-        <img src="img/mapa.png" />
-      </div>
-      <ul class="dados">
-        <li>isaiasgdally@gmail.com</li>
-        <li>+55 (75) 4002-8922</li>
-        <li>Rua Do Bobo, n° 0</li>
-        <li>Cachoeira - BA</li>
-      </ul>
-    </section>
-
-    <footer class="copy">
-      <p>Todos os direitos reservados.</p>
-    </footer>
 
     <script type="module" src="js/script.js"></script>
   </body>

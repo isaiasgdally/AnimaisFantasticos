@@ -7,8 +7,8 @@ export default function tabNav() {
       tabContent.forEach((section) => {
         section.classList.remove("ativo");
       });
-      const direcAnimacao = tabContent[index].dataset.anime
-      tabContent[index].classList.add("ativo", direcAnimacao); 
+      const direcAnimacao = tabContent[index].dataset.anime;
+      tabContent[index].classList.add("ativo", direcAnimacao);
     }
 
     tabMenu.forEach((itemMenu, index) => {
@@ -19,4 +19,4 @@ export default function tabNav() {
   }
 }
 
-console.log('Tab nav funcionou');
+console.log("Tab nav funcionou");

@@ -17,4 +17,4 @@ export default function linksIntScroll() {
   });
 }
 
-console.log('Scroll links internos funcionou');
+console.log("Scroll links internos funcionou");

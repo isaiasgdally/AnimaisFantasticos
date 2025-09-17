@@ -18,4 +18,4 @@ export default function scrollAnimation() {
   }
 }
 
-console.log('Scroll suave funcionou');
+console.log("Scroll suave funcionou");
