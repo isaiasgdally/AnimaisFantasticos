@@ -3,7 +3,11 @@ import scrollAnimation from "./modules/scroll-suave.js";
 import tabNav from "./modules/tab-nav.js";
 import accordionList from "./modules/accordion-list.js";
 import modalLogin from "./modules/modal.js";
+import toolTip from "./modules/tooltip.js";
 
+
+
+toolTip();
 modalLogin();
 tabNav();
 linksIntScroll();
