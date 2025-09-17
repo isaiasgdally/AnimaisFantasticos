@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <nav class="menu js-menu">
+    <nav class="menu js-menu" data="menu">
       <ul>
         <li><a href="#animais">Animais</a></li>
         <li><a href="#faq">Faq</a></li>
@@ -24,9 +24,9 @@
         </li>
       </ul>
     </nav>
-    <section class="grid-section animais js-scroll" id="animais">
+    <section class="grid-section animais" id="animais" data-anime="scroll">
       <h1 class="titulo">Animais Fantásticos</h1>
-      <ul class="animais-lista js-tabmenu">
+      <ul class="animais-lista" data-tab="menu">
         <li>
           <img src="img/imagem1.jpg" />
         </li>
@@ -46,8 +46,8 @@
           <img src="img/imagem6.jpg" />
         </li>
       </ul>
-      <div class="animais-descricao js-tabcontent">
-        <section class="ativo">
+      <div class="animais-descricao " data-tab="content">
+        <section class="ativo" data-anime="show-right">
           <h2>Raposa</h2>
           <p>
             As raposas são animais mamíferos e onívoros pertencentes à família
@@ -69,7 +69,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-right">
           <h2>Esquilo</h2>
           <p>
             Os esquilos são pequenos mamíferos roedores pertencentes à família
@@ -91,7 +91,7 @@
             lhes permitem perceber rapidamente a aproximação de predadores.
           </p>
         </section>
-        <section>
+        <section data-anime="show-down">
           <h2>Urso</h2>
           <p>
             Os ursos são grandes mamíferos pertencentes à família Ursidae. São
@@ -113,7 +113,7 @@
             habilidades que os ajudam na caça e na sobrevivência.
           </p>
         </section>
-        <section>
+        <section data-anime="show-down">
           <h2>Lobo</h2>
           <p>
             Os lobos são mamíferos carnívoros pertencentes à família Canidae.
@@ -135,7 +135,7 @@
             matilha.
           </p>
         </section>
-        <section>
+        <section data-anime="show-right">
           <h2>Macaco</h2>
           <p>
             Os macacos são primatas que se destacam pela inteligência,
@@ -157,7 +157,7 @@
             formando sociedades complexas com diferentes níveis de organização.
           </p>
         </section>
-        <section>
+        <section data-anime="show-right">
           <h2>Leão</h2>
           <p>
             Os leões são grandes felinos pertencentes ao gênero Panthera.
@@ -182,9 +182,9 @@
       </div>
     </section>
 
-    <section class="grid-section faq js-scroll" id="faq">
+    <section class="grid-section faq" id="faq" data-anime="scroll">
       <h1 class="titulo">FAQ</h1>
-      <dl class="faq-lista js-accordion">
+      <dl class="faq-lista " data-anime="accordion">
         <dt>Qual a idade dos animais?</dt>
         <dd>
           As raposas são animais mamíferos e onívoros pertencentes à família
@@ -210,7 +210,7 @@
       </dl>
     </section>
 
-    <section class="grid-section contato js-scroll" id="contato">
+    <section class="grid-section contato" id="contato" data-anime="scroll">
       <h1 class="titulo">Contato</h1>
       <div class="mapa">
         <img src="img/mapa.png" />
