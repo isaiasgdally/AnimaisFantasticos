@@ -250,26 +250,26 @@ body {
 }
 
 
-.js .js-accordion dd{
+.js [data-anime="accordion"] dd{
   display: none;
 }
 
-.js .js-accordion dd.ativo{
+.js [data-anime="accordion"] dd.ativo{
   display: block;
   animation: slideDown .5s forwards;
 }
 
-.js-accordion dt::after{
+[data-anime="accordion"] dt::after{
   content: "⤵";
   margin-left: 5px;
   cursor: pointer;
 }
 
-.js .js-accordion dt:hover{
+.js [data-anime="accordion"] dt:hover{
   cursor: pointer;
 }
 
-.js-accordion dt.ativo::after{
+[data-anime="accordion"] dt.ativo::after{
   content: "⤴";
   margin-left: 5px;
 }
