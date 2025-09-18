@@ -9,10 +9,10 @@
 [data-dropdown]:hover .dropdown-menu,
 [data-dropdown].ativo .dropdown-menu {
   display: block;
-  animation: show-up 0.3s forwards;
+  animation: show-down 0.3s forwards;
 }
 
-@keyframes show-up {
+@keyframes show-down {
   from {
     opacity: 0;
     transform: translate3d(0, -30px, 0);

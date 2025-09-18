@@ -5,10 +5,11 @@ import accordionList from "./modules/accordion-list.js";
 import modalLogin from "./modules/modal.js";
 import toolTip from "./modules/tooltip.js";
 import dropdownMenu from "./modules/dropdown-menu.js";
+import menuMobile from "./modules/menu-mobile.js";
 
 
 
-
+menuMobile();
 toolTip();
 modalLogin();
 tabNav();
@@ -16,4 +17,3 @@ linksIntScroll();
 accordionList();
 scrollAnimation();
 dropdownMenu();
-
