@@ -6,6 +6,10 @@ import modalLogin from "./modules/modal.js";
 import toolTip from "./modules/tooltip.js";
 import dropdownMenu from "./modules/dropdown-menu.js";
 import menuMobile from "./modules/menu-mobile.js";
+import animacaoNumeros from "./modules/animacao-num.js";
+
+
+
 
 
 
@@ -17,3 +21,4 @@ linksIntScroll();
 accordionList();
 scrollAnimation();
 dropdownMenu();
+animacaoNumeros();
