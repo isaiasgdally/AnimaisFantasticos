@@ -4,6 +4,8 @@ import tabNav from "./modules/tab-nav.js";
 import accordionList from "./modules/accordion-list.js";
 import modalLogin from "./modules/modal.js";
 import toolTip from "./modules/tooltip.js";
+import dropdownMenu from "./modules/dropdown-menu.js";
+
 
 
 
@@ -13,3 +15,5 @@ tabNav();
 linksIntScroll();
 accordionList();
 scrollAnimation();
+dropdownMenu();
+

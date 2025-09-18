@@ -195,7 +195,7 @@ body {
 }
 
 @media (max-width: 700px) {
-  body {
+  .grid-container {
     grid-template-columns: 1fr;
   }
   .menu,
