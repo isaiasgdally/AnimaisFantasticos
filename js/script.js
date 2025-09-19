@@ -7,12 +7,13 @@ import toolTip from "./modules/tooltip.js";
 import dropdownMenu from "./modules/dropdown-menu.js";
 import menuMobile from "./modules/menu-mobile.js";
 import animacaoNumeros from "./modules/animacao-num.js";
+import funcionamento from "./modules/horario-func.js";
 
 
 
 
 
-
+funcionamento()
 menuMobile();
 toolTip();
 modalLogin();
