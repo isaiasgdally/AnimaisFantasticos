@@ -10,7 +10,8 @@ export default function funcionamento() {
   const horarioAgora = dataAgora.getHours();
 
   const aberto = diasSemana.includes(diaAgora);
-  const horarioAberto = horarioAgora >= horarioFunc[0] && horarioAgora < horarioFunc[1];
+  const horarioAberto =
+    horarioAgora >= horarioFunc[0] && horarioAgora < horarioFunc[1];
 
   if (aberto && horarioAberto) {
     funcionamento.classList.add("aberto");

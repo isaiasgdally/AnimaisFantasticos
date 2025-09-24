@@ -20,18 +20,17 @@ export default function animacaoNumeros() {
   function handleIntersection(entries, observer) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        animaNumero(entry.target); 
-        observer.unobserve(entry.target); 
+        animaNumero(entry.target);
+        observer.unobserve(entry.target);
       }
     });
   }
 
   const observer = new IntersectionObserver(handleIntersection, {
-    threshold: 0.5, 
+    threshold: 0.5,
   });
 
   numeros.forEach((numero) => {
     observer.observe(numero);
   });
 }
-
